@@ -140,15 +140,15 @@ div h6{
     position:absolute; left: 10%;
     font-family: 'Roboto', sans-serif;
     text-align: right;
-    font-size: 60px;
+    font-size: 350%;
     color: rgb(253, 251, 251);
     transition-property: all;
-    transition-duration: 3s;
+    transition-duration: 2s;
     transition-timing-function: linear;
 }
 
 div h6:hover{
-    font-size: 120px;
+    font-size: 500%;
 }
 
 .funcional{
@@ -189,7 +189,23 @@ div h6:hover{
         color: rgb(250, 248, 248);
     }
 
-/*tablet*/
+/*mobile*/
+
+@media screen and (min-width: 576px){
+    main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+        "header header"
+        "imagen imagen"
+        "contenido contenido"
+        "contenido1 contenido1"
+        "contenido2 contenido2"
+        "footer footer";
+    }
+}
+
+/*Tablet*/
 
 @media screen and (min-width: 768px){
     main{
